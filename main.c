@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Mein erstes Projekt\n");
+    printf("Hallo Syria\n");
     return 0;
 }
