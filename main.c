@@ -1,6 +1,2 @@
-#include <stdio.h>
-
-int main() {
-    printf("Hallo Syria\n");
-    return 0;
-}
+#include<stdlib.h>
+#include<stdio.h>
