@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "csv.h"
 
 #define MAX_ROWS 1000
 #define MAX_COLS 10
