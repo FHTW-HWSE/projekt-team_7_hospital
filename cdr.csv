@@ -1,2 +1,15 @@
-project Hospital
-666666666666666
+Patient ID	Name	Arrival time	Transport Mode	Priority	Seat Number	Left Neighbor	Right Neighbor
+1	Rama Ammoshah	10:00	Independent	High			
+2	Isabella John	10:20	Independent	Low	1	3	
+3	Emilly Miller	10:40	Independent	Medium	2	2	4
+4	Sarah Mayer	11:00	Independent	Low	3	3	5
+5	Markus Beckerei	11:20	Rescue	High	4	4	6
+6	Nina Müller	11:40	Independent	High	5	5	7
+7	David Weber	12:00	Independent	Low	6	6	8
+8	Lukas Hoffmann	12:20	Independent	Medium	7	7	9
+9	Laura Schäfer	12:40	Independent	Medium	8	8	10
+10	Markus Beckerei	13:00	Independent	High	9	9	11
+11	Mark Becker	13:20	Independent	low	10	10	12
+12	Sam Schäfer	13:40	Independent	Medium	11	11	
+
+
