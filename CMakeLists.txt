@@ -1,21 +1,20 @@
 cmake_minimum_required(VERSION 3.10.0)
-project(HWSE-HOSPITAL)
+project(HWSE_HOSPITAL_PROJECT)
 find_package(Catch2 REQUIRED)
 include(CTest)
 include(Catch)
 
-add_library(HWSE-HOSPITAL src/csv.c)
-target_include_directories(HWSE-HOSPITAL PUBLIC include)
+add_library(HWSE_HOSPITAL src/csv.cpp)
+target_include_directories(HWSE_HOSPITAL PUBLIC include)
 
-add_executable(HWSE-Hospital_test test/main.c)
-
-
-target_include_directories(HWSE-HOSPITAL PUBLIC include)
+add_executable(HWSE_Hospital_test
+test/main.cpp
+test/csv_test.cpp 
+)
+catch_discover_tests(HWSE_Hospital_test)
+target_link_libraries(HWSE_Hospital_test HWSE_HOSPITAL)
 
  #Füge beliebige zusätzliche Compiler-Flags hinzu, falls erforderlich
- target_compile_options(HWSE-HOSPITAL PRIVATE -Wall -Wextra)
- target_link_libraries(HWSE-Hospital_test HWSE-Hospital)
- add_test(NAME MyTest COMMAND <test_target>)
- catch_discover_tests(HWSE-Hospital_test)
+ target_compile_options(HWSE_HOSPITAL PRIVATE -Wall -Wextra)
 
 
