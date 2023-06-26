@@ -66,3 +66,17 @@ void FreeSeat(patient_struct* headP, int seatNumber) {
         printf("Seat %d is occupied.\n", seatNumber);
     }
 }
+
+void PrintPatientsInfo(patient_struct* headP) {
+    printf("Printing patients' information:\n");
+    patient_struct* ptr = headP;
+    while (ptr != NULL) {
+        printf("Patient ID: %d\n", ptr->ID);
+        printf("Name: %s\n", ptr->name);
+        printf("Seatplace: %d\n", ptr->seatplace);
+        printf("Priority: %s\n", ptr->priority ? "true" : "false");
+        printf("Ambulance: %s\n", ptr->ambulance ? "true" : "false");
+        printf("\n");
+        ptr = ptr->next;
+    }
+}

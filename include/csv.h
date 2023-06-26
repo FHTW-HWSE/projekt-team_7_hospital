@@ -28,6 +28,7 @@ void addPatientToList(patient_struct **headP, patient_struct *newPatient);
 
 bool isSeatFree(patient_struct* headP, int seatNumber);
 void FreeSeat(patient_struct* headP, int seatNumber);
+void PrintPatientsInfo(patient_struct* headP); 
 
 
 #endif /* CSV_H_ */
