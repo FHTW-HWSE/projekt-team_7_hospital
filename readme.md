@@ -9,7 +9,7 @@
 
 # Requirements
 
-Funktionale Requirements:
+* Funktionale Requirements:
 
  - System unterstütz 2 Arten von Patienten; jene, die selbstständig in die Notaufnahme kommen und jene, welche mit dem Krankenwagen gebracht werden. Beide Arten von Patienten werden mittels SV-Nr ins System eingepflegt.
 
@@ -23,13 +23,13 @@ Funktionale Requirements:
 
 - Ein nachträgliches Abfragen der Sitznachbarn jedes Patienten muss möglich sein  Patienten müssen nach erfolgter Behandlung entfernt werden können  Das Programm soll über eine Command-Line ausführbar und bedienbar sein.
 
-Nicht- funktionale Requirements:
+* Nicht- funktionale Requirements:
 
 - Es ist keine kommerzielle Nutzung vorgesehen, also ist ein Release- und Updateprozess nicht notwendig.
 
 - Eine Unterstützung verschiedener Sprachen ist nicht vorgesehen, also ist eine Übersetzung der Anzeigeelemente nicht notwendig.
 
-Constraints:
+* Constraints:
 
  - Das Projekt muss bis spätestens 01.07.2023 fertiggestellt sein und hochgeladen werden.
  - Für die Entwicklung werden die vom Technikum empfohlenen Tools verwendet 
