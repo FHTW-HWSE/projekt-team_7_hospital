@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/csv.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdbool.h
+-
+
+/home/student/Desktop/HWSE-Hospital/test/csv_test.cpp
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stdbool.h
+-
+csv.h
+-
+catch2/catch.hpp
+-
+
+/home/student/Desktop/HWSE-Hospital/test/main.cpp
+catch2/catch.hpp
+-
+
