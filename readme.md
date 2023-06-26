@@ -1,17 +1,19 @@
-Gruppe 7:
+# Gruppe 7:
 "Project3: Hospital"
 
-Projektmitglieder:
+# Projektmitglieder:
 
 * Rama Ammoshah
 * Samson Obasuyi
 * Mohamad Sakkal
 
+# Requirements
+
 Funktionale Requirements:
 
- -System unterstütz 2 Arten von Patienten; jene, die selbstständig in die Notaufnahme kommen und jene, welche mit dem Krankenwagen gebracht werden. Beide Arten von Patienten werden mittels SV-Nr ins System eingepflegt.
+ - System unterstütz 2 Arten von Patienten; jene, die selbstständig in die Notaufnahme kommen und jene, welche mit dem Krankenwagen gebracht werden. Beide Arten von Patienten werden mittels SV-Nr ins System eingepflegt.
 
--Patienten, welche mit dem Krankenwagen gebracht werden, müssen priorisiert behandelt werden
+- Patienten, welche mit dem Krankenwagen gebracht werden, müssen priorisiert behandelt werden
 
 - Den Patienten, die selbstständig in die Notaufnahme kommen, muss ein Sitzplatz zugewiesen werden
 
