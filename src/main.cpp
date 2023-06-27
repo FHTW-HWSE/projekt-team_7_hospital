@@ -21,6 +21,8 @@ void addPatientToList(patient_struct** headP, patient_struct* newPatient);
 char* trimWhiteSpace(char* str);
 bool isSeatFree(patient_struct* headP, int seatNumber);
 void FreeSeat(patient_struct* headP, int seatNumber);
+void PrintPatientsInfo(patient_struct* headP); // Funktion zum Drucken der Patienteninformationen hinzugefügt
+
 
 int main() {
     patient_struct* head = NULL;
@@ -77,6 +79,8 @@ int main() {
     }
 
     displayListIDAndName(head);
+
+ PrintPatientsInfo(head); // Aufruf der Funktion zum Drucken der Patienteninformationen
  FreeSeat(head, 3);   // Check if seat number 3 is free or occupied
 
 
@@ -151,4 +155,19 @@ void FreeSeat(patient_struct* headP, int seatNumber) {
         printf("Seat %d is occupied.\n", seatNumber);
     }
 }
+
+void PrintPatientsInfo(patient_struct* headP) {
+    printf("Printing patients' information:\n");
+    patient_struct* ptr = headP;
+    while (ptr != NULL) {
+    	printf("Patient ID: %d\n", ptr->ID);
+    	        printf("Name: %s\n", ptr->name);
+    	        printf("Seatplace: %d\n", ptr->seatplace);
+    	        printf("Priority: %s\n", ptr->priority ? "true" : "false");
+    	        printf("Ambulance: %s\n", ptr->ambulance ? "true" : "false");
+    	        printf("\n");
+    	        ptr = ptr->next;
+    	    }
+    }
+
 
