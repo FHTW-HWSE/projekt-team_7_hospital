@@ -19,7 +19,8 @@ void displayListIDAndName(patient_struct* headP);
 patient_struct* createPatient(int newPatientID, char* newPatientName, int seatplace, bool priority, bool ambulance, patient_struct* newPatientNext, patient_struct* newPatientPrev);
 void addPatientToList(patient_struct** headP, patient_struct* newPatient);
 char* trimWhiteSpace(char* str);
-//void FreeSeat(patient_struct* headP, int seatNumber); //rama
+bool isSeatFree(patient_struct* headP, int seatNumber);
+void FreeSeat(patient_struct* headP, int seatNumber);
 
 int main() {
     patient_struct* head = NULL;
@@ -76,7 +77,8 @@ int main() {
     }
 
     displayListIDAndName(head);
-  //  void FreeSeat(patient_struct* headP, int seatNumber);
+ FreeSeat(head, 3);   // Check if seat number 3 is free or occupied
+
 
     fclose(fp);
     return 0;
@@ -132,3 +134,21 @@ char* trimWhiteSpace(char* str) {
     str[j + 1] = '\0';
     return &str[i];
 }
+bool isSeatFree(patient_struct* headP, int seatNumber) {
+    patient_struct* ptr = headP;
+    while (ptr != NULL) {
+        if (ptr->seatplace == seatNumber) {
+            return false;  // Seat is occupied
+        }
+        ptr = ptr->next;
+    }
+    return true;  // Seat is free
+}
+void FreeSeat(patient_struct* headP, int seatNumber) {
+    if (isSeatFree(headP, seatNumber)) {
+        printf("Seat %d is free.\n", seatNumber);
+    } else {
+        printf("Seat %d is occupied.\n", seatNumber);
+    }
+}
+
