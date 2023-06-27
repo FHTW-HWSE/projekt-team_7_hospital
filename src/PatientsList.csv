@@ -1,13 +1,13 @@
 ID,name,seatplace,priority,ambulance,leftNeighbour,rightNeighbour,
 1,Rama Ammoshah,1,true,false,NULL,NULL,	
-2,Isabella John,2,false,false,3,NULL,
-3,Emilly Miller,3,true,false,2,4,
-4,Sarah Mayer,4, false,false,3,5,
-5,Markus Beckerei,5,true,true,4,6
-6,Nina MÃ¼ller,6,true,true,5,7,
-7,David Weber,7,false,false,6,8,
-8,Lukas Hoffmann,8,true,false,7,9
-9,Laura Schaefer,9,false,true,8,10,
-10,Tony Beckerei,10, true,false,9,11,
+2,Isabella John,2,false,false,NULL,NULL,
+3,Emilly Miller,3,true,false,NULL,NULL,
+4,Sarah Mayer,4, false,false,NULL,NULL,
+5,Markus Beckerei,5,true,true,NULL,NULL,
+6,Nina MÃ¼ller,6,true,true,NULL,NULL,
+7,David Weber,7,false,false,NULL,NULL,
+8,Lukas Hoffmann,8,true,false,NULL,NULL,
+9,Laura Schaefer,9,false,true,NULL,NULL,
+10,Tony Beckerei,10, true,false,NULL,NULL,
 
 
