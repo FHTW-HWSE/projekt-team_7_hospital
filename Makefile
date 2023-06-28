@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/HWSE-Hospital
+CMAKE_SOURCE_DIR = /home/student/Desktop/projekt-team_7_hospital
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/HWSE-Hospital
+CMAKE_BINARY_DIR = /home/student/Desktop/projekt-team_7_hospital
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -110,9 +110,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/HWSE-Hospital/CMakeFiles /home/student/Desktop/HWSE-Hospital//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/projekt-team_7_hospital/CMakeFiles /home/student/Desktop/projekt-team_7_hospital//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/HWSE-Hospital/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Desktop/projekt-team_7_hospital/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -139,6 +139,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named HWSE_Hospital_test
+
+# Build rule for target.
+HWSE_Hospital_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HWSE_Hospital_test
+.PHONY : HWSE_Hospital_test
+
+# fast build rule for target.
+HWSE_Hospital_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/build
+.PHONY : HWSE_Hospital_test/fast
 
 #=============================================================================
 # Target rules for targets named NightlyMemCheck
@@ -401,17 +414,17 @@ NightlyCoverage/fast:
 .PHONY : NightlyCoverage/fast
 
 #=============================================================================
-# Target rules for targets named HWSE-HOSPITAL
+# Target rules for targets named HWSE_HOSPITAL
 
 # Build rule for target.
-HWSE-HOSPITAL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HWSE-HOSPITAL
-.PHONY : HWSE-HOSPITAL
+HWSE_HOSPITAL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HWSE_HOSPITAL
+.PHONY : HWSE_HOSPITAL
 
 # fast build rule for target.
-HWSE-HOSPITAL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-HOSPITAL.dir/build.make CMakeFiles/HWSE-HOSPITAL.dir/build
-.PHONY : HWSE-HOSPITAL/fast
+HWSE_HOSPITAL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_HOSPITAL.dir/build.make CMakeFiles/HWSE_HOSPITAL.dir/build
+.PHONY : HWSE_HOSPITAL/fast
 
 #=============================================================================
 # Target rules for targets named ExperimentalStart
@@ -479,19 +492,6 @@ ContinuousStart/fast:
 .PHONY : ContinuousStart/fast
 
 #=============================================================================
-# Target rules for targets named HWSE-Hospital_test
-
-# Build rule for target.
-HWSE-Hospital_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HWSE-Hospital_test
-.PHONY : HWSE-Hospital_test
-
-# fast build rule for target.
-HWSE-Hospital_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-Hospital_test.dir/build.make CMakeFiles/HWSE-Hospital_test.dir/build
-.PHONY : HWSE-Hospital_test/fast
-
-#=============================================================================
 # Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
@@ -530,59 +530,86 @@ ContinuousSubmit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContinuousSubmit.dir/build.make CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-src/csv.o: src/csv.c.o
+src/main.o: src/main.cpp.o
 
-.PHONY : src/csv.o
-
-# target to build an object file
-src/csv.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-HOSPITAL.dir/build.make CMakeFiles/HWSE-HOSPITAL.dir/src/csv.c.o
-.PHONY : src/csv.c.o
-
-src/csv.i: src/csv.c.i
-
-.PHONY : src/csv.i
-
-# target to preprocess a source file
-src/csv.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-HOSPITAL.dir/build.make CMakeFiles/HWSE-HOSPITAL.dir/src/csv.c.i
-.PHONY : src/csv.c.i
-
-src/csv.s: src/csv.c.s
-
-.PHONY : src/csv.s
-
-# target to generate assembly for a file
-src/csv.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-HOSPITAL.dir/build.make CMakeFiles/HWSE-HOSPITAL.dir/src/csv.c.s
-.PHONY : src/csv.c.s
-
-test/main.o: test/main.c.o
-
-.PHONY : test/main.o
+.PHONY : src/main.o
 
 # target to build an object file
-test/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-Hospital_test.dir/build.make CMakeFiles/HWSE-Hospital_test.dir/test/main.c.o
-.PHONY : test/main.c.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_HOSPITAL.dir/build.make CMakeFiles/HWSE_HOSPITAL.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-test/main.i: test/main.c.i
+src/main.i: src/main.cpp.i
 
-.PHONY : test/main.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-test/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-Hospital_test.dir/build.make CMakeFiles/HWSE-Hospital_test.dir/test/main.c.i
-.PHONY : test/main.c.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_HOSPITAL.dir/build.make CMakeFiles/HWSE_HOSPITAL.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-test/main.s: test/main.c.s
+src/main.s: src/main.cpp.s
 
-.PHONY : test/main.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-test/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE-Hospital_test.dir/build.make CMakeFiles/HWSE-Hospital_test.dir/test/main.c.s
-.PHONY : test/main.c.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_HOSPITAL.dir/build.make CMakeFiles/HWSE_HOSPITAL.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+test/csv_test.o: test/csv_test.cpp.o
+
+.PHONY : test/csv_test.o
+
+# target to build an object file
+test/csv_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o
+.PHONY : test/csv_test.cpp.o
+
+test/csv_test.i: test/csv_test.cpp.i
+
+.PHONY : test/csv_test.i
+
+# target to preprocess a source file
+test/csv_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.i
+.PHONY : test/csv_test.cpp.i
+
+test/csv_test.s: test/csv_test.cpp.s
+
+.PHONY : test/csv_test.s
+
+# target to generate assembly for a file
+test/csv_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.s
+.PHONY : test/csv_test.cpp.s
+
+test/main_test.o: test/main_test.cpp.o
+
+.PHONY : test/main_test.o
+
+# target to build an object file
+test/main_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o
+.PHONY : test/main_test.cpp.o
+
+test/main_test.i: test/main_test.cpp.i
+
+.PHONY : test/main_test.i
+
+# target to preprocess a source file
+test/main_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.i
+.PHONY : test/main_test.cpp.i
+
+test/main_test.s: test/main_test.cpp.s
+
+.PHONY : test/main_test.s
+
+# target to generate assembly for a file
+test/main_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HWSE_Hospital_test.dir/build.make CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.s
+.PHONY : test/main_test.cpp.s
 
 # Help Target
 help:
@@ -621,14 +648,17 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... HWSE-HOSPITAL"
-	@echo "... HWSE-Hospital_test"
-	@echo "... src/csv.o"
-	@echo "... src/csv.i"
-	@echo "... src/csv.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
+	@echo "... HWSE_HOSPITAL"
+	@echo "... HWSE_Hospital_test"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... test/csv_test.o"
+	@echo "... test/csv_test.i"
+	@echo "... test/csv_test.s"
+	@echo "... test/main_test.o"
+	@echo "... test/main_test.i"
+	@echo "... test/main_test.s"
 .PHONY : help
 
 

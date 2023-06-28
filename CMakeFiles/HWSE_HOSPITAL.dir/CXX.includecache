@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/student/Desktop/projekt-team_7_hospital/src/main.cpp
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+

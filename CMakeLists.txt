@@ -4,11 +4,11 @@ find_package(Catch2 REQUIRED)
 include(CTest)
 include(Catch)
 
-add_library(HWSE_HOSPITAL src/csv.cpp)
+add_library(HWSE_HOSPITAL src/main.cpp)
 target_include_directories(HWSE_HOSPITAL PUBLIC include)
 
 add_executable(HWSE_Hospital_test
-test/main.cpp
+test/main_test.cpp
 test/csv_test.cpp 
 )
 catch_discover_tests(HWSE_Hospital_test)

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/HWSE-Hospital
+CMAKE_SOURCE_DIR = /home/student/Desktop/projekt-team_7_hospital
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/HWSE-Hospital
+CMAKE_BINARY_DIR = /home/student/Desktop/projekt-team_7_hospital
 
 # Utility rule file for ExperimentalStart.
 
@@ -90,6 +90,6 @@ CMakeFiles/ExperimentalStart.dir/clean:
 .PHONY : CMakeFiles/ExperimentalStart.dir/clean
 
 CMakeFiles/ExperimentalStart.dir/depend:
-	cd /home/student/Desktop/HWSE-Hospital && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/HWSE-Hospital /home/student/Desktop/HWSE-Hospital /home/student/Desktop/HWSE-Hospital /home/student/Desktop/HWSE-Hospital /home/student/Desktop/HWSE-Hospital/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/projekt-team_7_hospital && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital/CMakeFiles/ExperimentalStart.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalStart.dir/depend
 
