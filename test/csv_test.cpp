@@ -1,30 +1,66 @@
-
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 #include <csv.h>
 #include <catch2/catch.hpp>
-
-#define MAX_ROWS 1000
-#define MAX_COLS 10
-#define MAX_FIELD_LENGTH 100
 
 TEST_CASE("Test1") {
 	REQUIRE(true);
 }
-TEST(PatientListTest, FreeSeat) {
+
+TEST_CASE("Check if seat is free") {
     patient_struct* head = NULL;
-    head = createPatient(1, "John", 1, true, true, NULL, NULL);
-    patient_struct* patient2 = createPatient(2, "Alice", 2, false, false, NULL, NULL);
-    head->next = patient2;
-    patient2->prev = head;
+    patient_struct* patient1 = (patient_struct*)malloc(sizeof(patient_struct));
+    patient1->seatplace = 1;
+    patient1->next = NULL;
+    head = patient1;
 
-    // Seat 3 should be free
-    ASSERT_TRUE(isSeatFree(head, 3));
+    SECTION("Occupied seat") {
+        bool result = isSeatFree(head, 1);
+        REQUIRE(result == false);
+    }
 
-    // Seat 1 and 2 are occupied
-    ASSERT_FALSE(isSeatFree(head, 1));
-    ASSERT_FALSE(isSeatFree(head, 2));
+    SECTION("Free seat") {
+        bool result = isSeatFree(head, 2);
+        REQUIRE(result == true);
+    }
 }
 
+TEST_CASE("Check if seat is free or occupied") {
+    patient_struct* head = NULL;
+    patient_struct* patient1 = (patient_struct*)malloc(sizeof(patient_struct));
+    patient1->seatplace = 1;   // Set the seatplace member of patient1 to 1
+    patient1->next = NULL;
+    head = patient1;
+
+    SECTION("Occupied seat") {
+        // Redirect stdout to a buffer
+        FILE* buffer;
+        buffer = freopen("output.txt", "w", stdout);
+
+        FreeSeat(head, 1);
+        fclose(buffer);
+		// Read the buffer and check the output
+        buffer = fopen("output.txt", "r");
+        char output[100];
+        fgets(output, sizeof(output), buffer);
+        fclose(buffer);
+
+        REQUIRE(strcmp(output, "Seat 1 is occupied.\n") == 0);
+    }
+
+    SECTION("Free seat") {
+        FILE* buffer;
+        buffer = freopen("output.txt", "w", stdout);
+
+        FreeSeat(head, 2);
+        fclose(buffer);
+
+        buffer = fopen("output.txt", "r");
+        char output[100];
+        fgets(output, sizeof(output), buffer);
+        fclose(buffer);
+
+        REQUIRE(strcmp(output, "Seat 2 is free.\n") == 0);
+    }
+}
