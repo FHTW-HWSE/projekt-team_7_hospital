@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/student/Desktop/projekt-team_7_hospital/test/main_test.cpp
+/home/student/Desktop/projekt-team_7_hospital/test/csv_test.cpp
+csv.h
+-
 catch2/catch.hpp
+-
+
+include/csv.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+stdbool.h
 -
 

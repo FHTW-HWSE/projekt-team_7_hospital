@@ -11,10 +11,10 @@
 
 void readPatientsList() {
 
-    FILE *cdr;
+    FILE *fp;
 
-    cdr = fopen("cdr.csv", "r");
-    if (!cdr)
+    fp = fopen("PatientsList.csv", "r");
+    if (!fp)
     {
         printf("can't open the file");
     }
@@ -24,7 +24,7 @@ void readPatientsList() {
     char fields[MAX_ROWS][MAX_COLS][MAX_FIELD_LENGTH]; // Array zur Speicherung der CSV-Daten
     int i = 0, j;                                      // Zähler für die Zeilen und Spalten
 
-    while (fgets(line, sizeof(line), cdr) != NULL)
+    while (fgets(line, sizeof(line), fp) != NULL)
     {                              // Liest eine Zeile aus der CSV-Datei
         j = 0;                     // Setzt den Spaltenzähler zurück
         field = strtok(line, ";"); // Trennt die Zeile in Felder anhand des Trennzeichens ";"
@@ -36,7 +36,7 @@ void readPatientsList() {
         }
         i++; // Erhöht den Zeilenzähler
     }
-    fclose(cdr);
+    fclose(fp);
 
     // Gibt die Matrix aus, um zu überprüfen, ob sie korrekt befüllt wurde
     for (int row = 0; row < i; row++){
