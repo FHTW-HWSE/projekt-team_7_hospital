@@ -1,5 +1,7 @@
 # Gruppe 7:
 "Project3: Hospital"
+# Link zum Git Repository
+https://github.com/FHTW-HWSE/projekt-team_7_hospital.git
 
 # Projektmitglieder:
 
