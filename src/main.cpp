@@ -2,6 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
+#include "functions.cpp"
 
 struct patient {
     int ID;
