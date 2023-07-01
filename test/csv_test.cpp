@@ -4,9 +4,45 @@
 #include <csv.h>
 #include <catch2/catch.hpp>
 
+#define MAX_ROWS 1000
+#define MAX_COLS 10
+#define MAX_FIELD_LENGTH 100
+
 TEST_CASE("Test1") {
 	REQUIRE(true);
 }
+     
+TEST_CASE("Read patients list from CSV", "[readPatientsList]"){
+
+    // Create the fields array
+    char fields[MAX_ROWS][MAX_COLS][MAX_FIELD_LENGTH];
+
+    SECTION("Valid CSV file")
+    {
+        // Create a sample CSV file
+        FILE* fp = fopen("PatientsList.csv", "w");
+        fprintf(fp, "ID,name,seatplace,priority,ambulance,leftNeighbour,rightNeighbour,\n");
+        fprintf(fp, "1,Rama Ammoshah,1,FALSE,FALSE,NULL,NULL,\n");
+        fprintf(fp, "2,Isabella John,2,FALSE,FALSE,NULL,NULL,\n");
+        fprintf(fp, "3,Emilly Miller,3,TRUE,TRUE,NULL,NULL,\n");
+        fprintf(fp, "4,Sarah Mayer,4,FALSE,FALSE,NULL,NULL,\n");
+        fprintf(fp, "5,Markus Beckerei,5,TRUE,TRUE,NULL,NULL,\n");
+        fclose(fp);
+
+        // Call the function
+        readPatientsList();
+
+        // Assertions
+        REQUIRE(strcmp(fields[0][0], "ID") == 0);
+        REQUIRE(strcmp(fields[1][1], "Rama Ammoshah") == 0);
+        REQUIRE(strcmp(fields[2][2], "2") == 0);
+        REQUIRE(strcmp(fields[3][3], "FALSE") == 0);
+        REQUIRE(strcmp(fields[4][4], "FALSE") == 0);
+        REQUIRE(strcmp(fields[5][5], "NULL") == 0);
+        REQUIRE(strcmp(fields[6][6], "NULL") == 0);
+    }
+}
+
 
 TEST_CASE("Check if seat is free") {
     patient_struct* head = NULL;
