@@ -42,7 +42,26 @@ TEST_CASE("Read patients list from CSV", "[readPatientsList]"){
         REQUIRE(strcmp(fields[6][6], "NULL") == 0);
     }
 }
+TEST_CASE("Print patients' information", "[PrintPatientsInfo]")
+{
+    SECTION("Valid patient list")
+    {
+        // Create sample patient list
+        patient_struct patient1 = {1, "Rama Ammoshah", 1, false, false, NULL};
+        patient_struct patient2 = {2, "Isabella John", 2, false, false, NULL};
+        patient_struct patient3 = {3, "Emilly Miller", 3, true, true, NULL};
 
+        patient1.next = &patient2;
+        patient2.next = &patient3;
+
+        // Call the function
+        PrintPatientsInfo(&patient1);
+
+        REQUIRE(strcmp(patient1.name, "Rama Ammoshah") == 0);
+        REQUIRE(strcmp(patient2.name, "Isabella John") == 0);
+        REQUIRE(strcmp(patient3.name, "Emilly Miller") == 0);
+    }
+}
 
 TEST_CASE("Check if seat is free") {
     patient_struct* head = NULL;
