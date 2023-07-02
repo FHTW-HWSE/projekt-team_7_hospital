@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/projekt-team_7_hospital
+CMAKE_SOURCE_DIR = /home/student/Desktop/HWSE_HOSPITAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/projekt-team_7_hospital
+CMAKE_BINARY_DIR = /home/student/Desktop/HWSE_HOSPITAL
 
 # Utility rule file for ExperimentalSubmit.
 
@@ -90,6 +90,6 @@ CMakeFiles/ExperimentalSubmit.dir/clean:
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/clean
 
 CMakeFiles/ExperimentalSubmit.dir/depend:
-	cd /home/student/Desktop/projekt-team_7_hospital && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/HWSE_HOSPITAL && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL/CMakeFiles/ExperimentalSubmit.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalSubmit.dir/depend
 

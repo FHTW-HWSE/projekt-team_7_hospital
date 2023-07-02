@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/student/Desktop/projekt-team_7_hospital/include
+CXX_INCLUDES = -I/home/student/Desktop/HWSE_HOSPITAL/include
 
 CXX_FLAGS = 
 

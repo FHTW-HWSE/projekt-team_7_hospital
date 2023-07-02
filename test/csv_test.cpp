@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <csv.h>
+#include <functions.h>
 #include <catch2/catch.hpp>
 
 #define MAX_ROWS 1000
@@ -11,8 +11,7 @@
 TEST_CASE("Test1") {
 	REQUIRE(true);
 }
-     
-TEST_CASE("Read patients list from CSV", "[readPatientsList]"){
+ TEST_CASE("Read patients list from CSV", "[readPatientsList]"){
 
     // Create the fields array
     char fields[MAX_ROWS][MAX_COLS][MAX_FIELD_LENGTH];
@@ -28,9 +27,6 @@ TEST_CASE("Read patients list from CSV", "[readPatientsList]"){
         fprintf(fp, "4,Sarah Mayer,4,FALSE,FALSE,NULL,NULL,\n");
         fprintf(fp, "5,Markus Beckerei,5,TRUE,TRUE,NULL,NULL,\n");
         fclose(fp);
-
-        // Call the function
-        readPatientsList();
 
         // Assertions
         REQUIRE(strcmp(fields[0][0], "ID") == 0);

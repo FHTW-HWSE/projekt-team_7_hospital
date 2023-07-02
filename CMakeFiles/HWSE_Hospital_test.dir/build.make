@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Desktop/projekt-team_7_hospital
+CMAKE_SOURCE_DIR = /home/student/Desktop/HWSE_HOSPITAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Desktop/projekt-team_7_hospital
+CMAKE_BINARY_DIR = /home/student/Desktop/HWSE_HOSPITAL
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HWSE_Hospital_test.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/HWSE_Hospital_test.dir/flags.make
 
 CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o: CMakeFiles/HWSE_Hospital_test.dir/flags.make
 CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o: test/main_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/projekt-team_7_hospital/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o -c /home/student/Desktop/projekt-team_7_hospital/test/main_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.o -c /home/student/Desktop/HWSE_HOSPITAL/test/main_test.cpp
 
 CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/projekt-team_7_hospital/test/main_test.cpp > CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/HWSE_HOSPITAL/test/main_test.cpp > CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.i
 
 CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/projekt-team_7_hospital/test/main_test.cpp -o CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/HWSE_HOSPITAL/test/main_test.cpp -o CMakeFiles/HWSE_Hospital_test.dir/test/main_test.cpp.s
 
 CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o: CMakeFiles/HWSE_Hospital_test.dir/flags.make
 CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o: test/csv_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/projekt-team_7_hospital/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o -c /home/student/Desktop/projekt-team_7_hospital/test/csv_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o -c /home/student/Desktop/HWSE_HOSPITAL/test/csv_test.cpp
 
 CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/projekt-team_7_hospital/test/csv_test.cpp > CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/HWSE_HOSPITAL/test/csv_test.cpp > CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.i
 
 CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/projekt-team_7_hospital/test/csv_test.cpp -o CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/HWSE_HOSPITAL/test/csv_test.cpp -o CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.s
 
 # Object files for target HWSE_Hospital_test
 HWSE_Hospital_test_OBJECTS = \
@@ -115,9 +115,9 @@ HWSE_Hospital_test: CMakeFiles/HWSE_Hospital_test.dir/test/csv_test.cpp.o
 HWSE_Hospital_test: CMakeFiles/HWSE_Hospital_test.dir/build.make
 HWSE_Hospital_test: libHWSE_HOSPITAL.a
 HWSE_Hospital_test: CMakeFiles/HWSE_Hospital_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/projekt-team_7_hospital/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HWSE_Hospital_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HWSE_Hospital_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HWSE_Hospital_test.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -D TEST_TARGET=HWSE_Hospital_test -D TEST_EXECUTABLE=/home/student/Desktop/projekt-team_7_hospital/HWSE_Hospital_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/student/Desktop/projekt-team_7_hospital -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=HWSE_Hospital_test_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/home/student/Desktop/projekt-team_7_hospital/HWSE_Hospital_test_tests-b12d07c.cmake -P /usr/lib/cmake/Catch2/CatchAddTests.cmake
+	/usr/bin/cmake -D TEST_TARGET=HWSE_Hospital_test -D TEST_EXECUTABLE=/home/student/Desktop/HWSE_HOSPITAL/HWSE_Hospital_test -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/student/Desktop/HWSE_HOSPITAL -D TEST_SPEC= -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_LIST=HWSE_Hospital_test_TESTS -D TEST_REPORTER= -D TEST_OUTPUT_DIR= -D TEST_OUTPUT_PREFIX= -D TEST_OUTPUT_SUFFIX= -D CTEST_FILE=/home/student/Desktop/HWSE_HOSPITAL/HWSE_Hospital_test_tests-b12d07c.cmake -P /usr/lib/cmake/Catch2/CatchAddTests.cmake
 
 # Rule to build all files generated by this target.
 CMakeFiles/HWSE_Hospital_test.dir/build: HWSE_Hospital_test
@@ -129,6 +129,6 @@ CMakeFiles/HWSE_Hospital_test.dir/clean:
 .PHONY : CMakeFiles/HWSE_Hospital_test.dir/clean
 
 CMakeFiles/HWSE_Hospital_test.dir/depend:
-	cd /home/student/Desktop/projekt-team_7_hospital && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital /home/student/Desktop/projekt-team_7_hospital/CMakeFiles/HWSE_Hospital_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Desktop/HWSE_HOSPITAL && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL /home/student/Desktop/HWSE_HOSPITAL/CMakeFiles/HWSE_Hospital_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/HWSE_Hospital_test.dir/depend
 
