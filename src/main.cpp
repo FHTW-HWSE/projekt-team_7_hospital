@@ -79,7 +79,7 @@ int main() {
             newPatient->prev = temp;
         }
     }
-
+//Rama
  PrintPatientsInfo(head); // Aufruf der Funktion zum Drucken der Patienteninformationen
  FreeSeat(head, 3);   // Check if seat number 3 is free or occupied
  patient_struct *patient11 = createPatient(11,"Marvin Travis",11,false,false,NULL,NULL);
@@ -87,9 +87,9 @@ int main() {
 	 addPatientToList(&head, patient11);
 	 addPatientToList(&head, patient12);
 	 displayListIDAndName(head);
+     removePatientFromList(&head,patient11);
 	 
-
-
+     displayListIDAndName(head);
     fclose(fp);
     return 0;
 }
