@@ -1,5 +1,0 @@
-if(EXISTS "/home/student/Desktop/HWSE_HOSPITAL/HWSE_Hospital_test_tests-b12d07c.cmake")
-  include("/home/student/Desktop/HWSE_HOSPITAL/HWSE_Hospital_test_tests-b12d07c.cmake")
-else()
-  add_test(HWSE_Hospital_test_NOT_BUILT-b12d07c HWSE_Hospital_test_NOT_BUILT-b12d07c)
-endif()

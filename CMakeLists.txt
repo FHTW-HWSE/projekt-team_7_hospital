@@ -4,7 +4,9 @@ find_package(Catch2 REQUIRED)
 include(CTest)
 include(Catch)
 
-add_library(HWSE_HOSPITAL src/main.cpp)
+add_library(HWSE_HOSPITAL src/main.c src/functions.cpp )
+    
+
 target_include_directories(HWSE_HOSPITAL PUBLIC include)
 
 add_executable(HWSE_Hospital_test

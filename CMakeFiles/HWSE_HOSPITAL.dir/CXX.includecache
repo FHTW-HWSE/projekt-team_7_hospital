@@ -20,18 +20,6 @@ functions.h
 stdbool.h
 -
 
-/home/student/Desktop/HWSE_HOSPITAL/src/main.cpp
-stdio.h
--
-stdbool.h
--
-string.h
--
-stdlib.h
--
-functions.cpp
-/home/student/Desktop/HWSE_HOSPITAL/src/functions.cpp
-
 include/functions.h
 stdbool.h
 -

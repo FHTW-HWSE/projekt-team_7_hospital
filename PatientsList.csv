@@ -1,0 +1,6 @@
+ID,name,seatplace,priority,ambulance,leftNeighbour,rightNeighbour,
+1,Rama Ammoshah,1,FALSE,FALSE,NULL,NULL,
+2,Isabella John,2,FALSE,FALSE,NULL,NULL,
+3,Emilly Miller,3,TRUE,TRUE,NULL,NULL,
+4,Sarah Mayer,4,FALSE,FALSE,NULL,NULL,
+5,Markus Beckerei,5,TRUE,TRUE,NULL,NULL,

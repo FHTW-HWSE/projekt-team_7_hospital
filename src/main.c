@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
-#include "functions.cpp"
+#include "functions.h"
 
 //struct patient {
 //    int ID;
