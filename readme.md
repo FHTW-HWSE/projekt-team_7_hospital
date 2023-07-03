@@ -38,7 +38,7 @@ ______________
 
  - Das Projekt muss bis spätestens 01.07.2023 fertiggestellt sein und hochgeladen werden.
  - Für die Entwicklung werden die vom Technikum empfohlenen Tools verwendet 
- - Das Projekt wird in C implementiert
+ 
 
 
 
