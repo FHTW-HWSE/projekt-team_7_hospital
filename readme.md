@@ -9,6 +9,20 @@ https://github.com/FHTW-HWSE/projekt-team_7_hospital.git
 * Samson Obasuyi
 * Mohamad Sakkal
 
+Compiler main :
+make clear 
+make
+ls
+./HWSE_HOSPITAL
+
+compile unit tset:
+mkdir build
+cd build
+cmake
+make
+ls
+./HWSE_Hospital_test
+
 # Requirements
 
 * Funktionale Requirements:
