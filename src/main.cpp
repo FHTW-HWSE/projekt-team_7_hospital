@@ -80,10 +80,14 @@ int main() {
         }
     }
 
-    displayListIDAndName(head);
-
  PrintPatientsInfo(head); // Aufruf der Funktion zum Drucken der Patienteninformationen
  FreeSeat(head, 3);   // Check if seat number 3 is free or occupied
+ patient_struct *patient11 = createPatient(11,"Marvin Travis",11,false,false,NULL,NULL);
+	 patient_struct *patient12 = createPatient(12,"Susi Baum",12,false,false,NULL,NULL);
+	 addPatientToList(&head, patient11);
+	 addPatientToList(&head, patient12);
+	 displayListIDAndName(head);
+	 
 
 
     fclose(fp);
