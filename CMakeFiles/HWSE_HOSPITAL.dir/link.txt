@@ -1,2 +1,2 @@
-/usr/bin/ar qc libHWSE_HOSPITAL.a CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o
+/usr/bin/ar qc libHWSE_HOSPITAL.a CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o
 /usr/bin/ranlib libHWSE_HOSPITAL.a

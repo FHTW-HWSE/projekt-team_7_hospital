@@ -18,6 +18,10 @@ functions.h
 catch2/catch.hpp
 -
 
+/home/student/Desktop/HWSE_HOSPITAL/test/main_test.cpp
+catch2/catch.hpp
+-
+
 include/functions.h
 stdbool.h
 -

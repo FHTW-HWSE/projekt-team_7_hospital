@@ -1,2 +1,0 @@
-/usr/bin/ar qc libHWSE_HOSPITAL.a CMakeFiles/HWSE_HOSPITAL.dir/src/csv.cpp.o
-/usr/bin/ranlib libHWSE_HOSPITAL.a

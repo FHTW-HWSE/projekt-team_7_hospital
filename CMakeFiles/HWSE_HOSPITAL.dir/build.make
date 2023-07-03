@@ -89,32 +89,32 @@ CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/HWSE_HOSPITAL/src/main.c -o CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.s
 
-CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o: CMakeFiles/HWSE_HOSPITAL.dir/flags.make
-CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o: src/functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o -c /home/student/Desktop/HWSE_HOSPITAL/src/functions.cpp
+CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o: CMakeFiles/HWSE_HOSPITAL.dir/flags.make
+CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o: src/functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o -c /home/student/Desktop/HWSE_HOSPITAL/src/functions.c
 
-CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Desktop/HWSE_HOSPITAL/src/functions.cpp > CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.i
+CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/student/Desktop/HWSE_HOSPITAL/src/functions.c > CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.i
 
-CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Desktop/HWSE_HOSPITAL/src/functions.cpp -o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.s
+CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/student/Desktop/HWSE_HOSPITAL/src/functions.c -o CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.s
 
 # Object files for target HWSE_HOSPITAL
 HWSE_HOSPITAL_OBJECTS = \
 "CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.o" \
-"CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o"
+"CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o"
 
 # External object files for target HWSE_HOSPITAL
 HWSE_HOSPITAL_EXTERNAL_OBJECTS =
 
 libHWSE_HOSPITAL.a: CMakeFiles/HWSE_HOSPITAL.dir/src/main.c.o
-libHWSE_HOSPITAL.a: CMakeFiles/HWSE_HOSPITAL.dir/src/functions.cpp.o
+libHWSE_HOSPITAL.a: CMakeFiles/HWSE_HOSPITAL.dir/src/functions.c.o
 libHWSE_HOSPITAL.a: CMakeFiles/HWSE_HOSPITAL.dir/build.make
 libHWSE_HOSPITAL.a: CMakeFiles/HWSE_HOSPITAL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libHWSE_HOSPITAL.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Desktop/HWSE_HOSPITAL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libHWSE_HOSPITAL.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/HWSE_HOSPITAL.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HWSE_HOSPITAL.dir/link.txt --verbose=$(VERBOSE)
 

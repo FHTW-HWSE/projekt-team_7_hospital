@@ -6,3 +6,37 @@
 
 #IncludeRegexTransform: 
 
+/home/student/Desktop/HWSE_HOSPITAL/include/functions.h
+stdbool.h
+-
+
+/home/student/Desktop/HWSE_HOSPITAL/src/functions.c
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+functions.h
+/home/student/Desktop/HWSE_HOSPITAL/src/functions.h
+stdbool.h
+-
+
+/home/student/Desktop/HWSE_HOSPITAL/src/main.c
+stdio.h
+-
+stdbool.h
+-
+string.h
+-
+stdlib.h
+-
+../include/functions.h
+/home/student/Desktop/HWSE_HOSPITAL/include/functions.h
+
+include/functions.h
+stdbool.h
+-
+

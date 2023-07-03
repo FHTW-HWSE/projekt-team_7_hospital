@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <functions.h>
+#include "../include/functions.h"
 #include <catch2/catch.hpp>
 
 #define MAX_ROWS 1000
@@ -40,49 +40,6 @@ TEST_CASE("Test1") {
 }
 
 
-TEST_CASE("Display patient list - ID and Name", "[displayListIDAndName]")
-{
-    SECTION("Valid patient list")
-    {
-        // Create sample patient list
-        patient_struct patient1 = {1, "Rama Ammoshah", 1, false, false, NULL, NULL};
-        patient_struct patient2 = {2, "Isabella John", 2, false, false, NULL, NULL};
-        patient_struct patient3 = {3, "Emilly Miller", 3, true, true, NULL, NULL};
-
-        patient1.next = &patient2;
-        patient2.next = &patient3;
-
-        // Call the function
-        displayListIDAndName(&patient1);
-
-        // Assertions
-        // Add assertions to validate the printed patient IDs and names
-        REQUIRE(patient1.ID == 1);
-        REQUIRE(strcmp(patient1.name, "Rama Ammoshah") == 0);
-
-        REQUIRE(patient2.ID == 2);
-        REQUIRE(strcmp(patient2.name, "Isabella John") == 0);
-
-        REQUIRE(patient3.ID == 3);
-        REQUIRE(strcmp(patient3.name, "Emilly Miller") == 0);
-    }
-}
-
-TEST_CASE("Create patient", "[createPatient]")
-{
-    SECTION("Valid patient")
-    {
-        // Call the function
-        patient_struct* patient = createPatient(1, "John Doe", 3, true, false, NULL, NULL);
-
-        // Assertions
-        REQUIRE(patient->ID == 1);
-        REQUIRE(strcmp(patient->name, "John Doe") == 0);
-        REQUIRE(patient->seatplace == 3);
-        REQUIRE(patient->priority == true);
-        REQUIRE(patient->ambulance == false);
-    }
-}
 
 TEST_CASE("Print patients' information", "[PrintPatientsInfo]")
 {

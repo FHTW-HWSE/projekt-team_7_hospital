@@ -2,7 +2,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdlib.h>
-#include "functions.h"
+#include "../include/functions.h"
 #include <stdbool.h>
 
 void displayListIDAndName(patient_struct *headP) {
